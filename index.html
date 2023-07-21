@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharva Shelke - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://www.springboard.com/blog/wp-content/uploads/2021/08/what-does-a-data-analyst-do-2022-career-guide.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #333;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #4a148c;
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .event {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fade-in 1s ease-in-out;
+      border-radius: 10px;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: slide-up 1s ease-in-out;
+      border-radius: 10px;
+    }
+
+    @keyframes slide-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 10px;
+    }
+
+    #achievements ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    #achievements ul li {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #4a148c;
+      color: #ffffff;
+      border-radius: 5px;
+      animation: pulse 1s infinite;
+    }
+
+    .project-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #4a148c;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .project-button:hover {
+      background-color: #651fff;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    #contact-info {
+      color: #0d47a1;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #contact-info p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://drive.google.com/uc?export=view&id=1igXspGl9gF599tn6mNESgmLbOYAB8zFH" alt="Profile Photo">
+        <h1>Atharva Shelke</h1>
+        <nav>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="event">
+            <h3>D. Y. Patil College of Engineering [PUNE]</h3>
+            <p>Bachelor of Engineering | CGPA: 8.3 | LEARNING · AI&ML · LATHE & DRILLING MACHINE · PYTHON · MODERN MACHINING PROCESS · PRODUCT DEVELOPMENT · INDUSTRIAL PSYCHOLOGY · CIM & CAE · ENGINEERING</p>
+            <p>Jun 2019 – June 2023</p>
+          </div>
+          <div class="event">
+            <h3>Pathsetter</h3>
+            <p>Data Science and ML Fellowship.  | EDA · foundation · Data modeling and predictive analysis · Contemporary applications solving real world problems · Foundations of Data Science and ML project · Python (Programming Language)</p>
+            <p>Oct 2022 – June 2023</p>
+          </div>
+          <div class="event">
+            <h3>JDC Bytco College [NASHIK]</h3>
+            <p>Higher Secondary Education (HSC) | 72.3 %</p>
+            <p>July 2018 – May 2019</p>
+          </div>
+          <div class="event">
+            <h3>K. N. KELA HIGH SCHOOL [NASHIK]</h3>
+            <p>Secondary School Education (SSC) | 90.4 %</p>
+            <p>July 2016 – Mar 2017</p>
+          </div>
+
+        </div>
+      </section>
+      
+    
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="event">
+            <h3>Artificial Intelligence Intern</h3>
+            <p>Personifwy {Remote}</p>
+            <p>Feb 2022 – June 2022</p>
+            <ul>
+              <li>Designed a Machine model for projects Based on Image Classification and to apply CNN and NLP models on Ml Classification Along with the help of logistic and linear Algorithm.</li>
+              <li>Working with CNN, NLP, Matplotlib, AI-ML Tools.</li>
+            </ul>
+          </div>
+          <div class="event">
+            <h3>Python Programming Intern</h3>
+            <p>Cognifront</p>
+            <p>Nov 2021 – Dec 2021</p>
+            <ul>
+              <li>Worked with the seniors on various python models and solving problems in PYTHON.</li>
+              <li>Python, Problem Solving, Logic Building.</li>
+            </ul>
+          </div>
+          <div class="event">
+            <h3>Mechanical Project Intern</h3>
+            <p>Quality Engineering {India}</p>
+            <p>June 2021 – July 2021</p>
+            <ul>
+              <li>Worked as a mechanical intern with a professional team on various machines to complete good jobs (Production).</li>
+              <li>Worked with - Lathe, Drill, and some Cutting machines.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Data Analysis: Transaction Data and Purchase Behavior | Quantium 2023</h3>
+      <ul>
+        <li>Data preparation and customer analytics.</li>
+        <li>Experimentation and uplift testing.</li>
+        <li>Analytics and commercial application.</li>
+      </ul>
+      <button class="project-button" onclick="window.open('https://github.com/aasuraK/Data-Analysis-Transaction-Data-and-Purchase-Behavior-', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn11DXTzflt2Sxx851IGJF-8Vg7lpaAaIVjA" alt="GitHub">
+        GitHub
+      </button>
+    </div>
+    <div class="project">
+      <h3>Data Visualization: Empowering Business with Effective Insights | TATA [Forage 2023]</h3>
+      <ul>
+        <li>The Framing the Business Scenario. Choosing the Right Visuals. Creating Effective Visuals.</li>
+        <li>Communicating Insights and Analysis.</li>
+      </ul>
+      <button class="project-button" onclick="window.open('https://github.com/aasuraK/DatanVisualization-1/tree/main', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn11DXTzflt2Sxx851IGJF-8Vg7lpaAaIVjA" alt="GitHub">
+        GitHub
+      </button>
+    </div>
+    <div class="project">
+      <h3>Power BI Data Visualization |Data set by Aditya Vyass (2023)</h3>
+      <ul>
+        <li>Used an e-commerce dataset sourced from a social media platform to create a dynamic Power BI dashboard that provides insights into the number of orders, revenue, popular products, and countries where orders were placed.</li>
+        <li>The visualization helped identify trends and patterns that can be used to make data-driven decisions about product placement and marketing strategies.</li>
+      </ul>
+      <button class="project-button" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7043943635876200448/', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn11DXTzflt2Sxx851IGJF-8Vg7lpaAaIVjA" alt="LinkedIn">
+        LinkedIn
+      </button>
+    </div>
+    <div class="project">
+      <h3>Reinforcement Learning Model to reduce lap timing within 3 min| Amazon AWS DEEPRACE [2023] </h3>
+      <ul>
+        <li>Developed a reinforcement learning agent using Python to control an autonomous vehicle in a simulated environment.</li>
+        <li>Implemented a reward function to optimize the agent's performance and encourage desired behavior. Skills- NLP, ML, AWS-ML, Reward function, Driving model.</li>
+      </ul>
+      <button class="project-button" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7043943635876200448/', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn11DXTzflt2Sxx851IGJF-8Vg7lpaAaIVjA" alt="GitHub">
+        GitHub
+      </button>
+    </div>
+  </section>
+  
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Programming Languages: SQL, Python, Supervised learning, Unsupervised learning, Deep learning</li>
+      <li>Techniques: Logistic regression, Linear regression, ML Basics</li>
+      <li>Development Tools: Excel, AWS, PowerBI, ETL, DATA-piplines, warehousing</li>
+      <li>Libraries: SVM, NLTK, Seaborn, NumPy, Pytorch, Scikitlearn, Pandas, Matplotlib</li>
+      <li>Competitive Programming: 3 Codechef, Leetcode</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>AccioSat 2022 Scholarship test Rank 373</li>
+      <li>Cleared AWS DEEPRACER Race & Secured Scolarship in AI </li>
+      <li>IIT Guwahati Technothlon Junior Squad AIR-56</li>
+      <li>Qualified Meta Global Hackathon - ID</li>
+    </ul>
+  </section>
+  <section id="contact-info">
+    <h2>Location</h2>
+    <p>Maharashtra, India</p>
+    <h2>Mobile</h2>
+    <p>(+91) 8623011047</p>
+    <h2>Email</h2>
+    <p>atharvashelke1234@gmail.com</p>
+  </section>
+</body>
+
+</html>
